@@ -1,5 +1,13 @@
 <nb-layout>
-  <nb-layout-header fixed>Company Name</nb-layout-header>
+  <nb-layout-header fixed>
+    <button 
+      nbButton
+      click="toggleSidebar()"
+    >👊</button>
+    <span
+    
+    >Company Name</span>
+  </nb-layout-header>
 
   <nb-sidebar>
     Sidebar Content
@@ -11,4 +19,8 @@
       <button nbButton> Hello World 🙀 </button>
     </p>
   </nb-layout-column>
+
+  <nb-layout-footer fixed>
+    Footer
+  </nb-layout-footer>
 </nb-layout>

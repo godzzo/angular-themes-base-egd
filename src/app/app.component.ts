@@ -1,4 +1,6 @@
-import { Component, VERSION } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { NbSidebarService } from '@nebular/theme';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +8,16 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+  
+  constructor(
+    private sidebarService: NbSidebarService,
+  ) {
+
+  }
+
+  toggleSidebar() {
+    this.sidebarService.toggle(true);
+
+    console.log('toggleSidebar');
+  }
 }
