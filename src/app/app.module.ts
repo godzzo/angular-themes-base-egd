@@ -11,6 +11,7 @@ import { NbSidebarModule, NbLayoutModule, NbButtonModule } from '@nebular/theme'
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { BelaComponent } from './bela/bela.component';
+import { RocketComponent } from './rocket/rocket.component';
 
 @NgModule({
   imports:      [ 
@@ -25,7 +26,7 @@ import { BelaComponent } from './bela/bela.component';
     NbSidebarModule.forRoot(), //if this is your app.module
     NbButtonModule,
   ],
-  declarations: [ AppComponent, HelloComponent, BelaComponent ],
+  declarations: [ AppComponent, HelloComponent, BelaComponent, RocketComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
